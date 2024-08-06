@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone With help</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script>
+       $(document).ready(function() {
+        // Loop to generate click event handlers for #faq1 to #faq8
+        for (let i = 1; i <= 6; i++) {
+            $(`#faq${i}`).click(function() {
+                $(`#faqd${i}`).slideToggle();
+            });
+        }
+    });
+    </script>
+  </head>
+  <body>
+    <div class="background">
+        <nav class="navbar content">
+        <img src="logo.svg" alt="netflix logo" class="logo" />
+        <button class="btn-secondary colorwhite">Sign In</button>
+            </nav>
+          <section class="section1 content">
+              <h2>Unlimited movies, TV shows, and more</h2>
+              <h3>Watch anywhere. Cancel anytime.</h3>
+              <p>
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </p>
+              <div class="to-sign-up">
+                <input type="email" placeholder="Email address" name="" id="" />
+                <button class="btn-primary">
+                  Get Started &gt;
+                </button>
+              </div>
+            </section>
+            <div class="background1"></div>
+        <!-- <img src="/img/1st-bg.jpg" alt="background of netflix shows"> -->
+      </div>
+      
+        
+        <div class="mrgn7"></div>
+      <section class="section2 content">
+          <div class="text2">
+            <h2>Enjoy on your TV</h2>
+            <h3>
+              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+              Blu-ray players, and more.
+            </h3>
+          </div>
+          <div class="tv2">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="netflix vid on tv" />
+            <!-- <img src="/img/tv-img.png" alt="netflix vid on tv" /> -->
+            <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" autoplay muted loop></video>
+            <!-- <video src="/vids/video-tv-1.m4v" autoplay muted loop></video> -->
+          </div>
+      </section>
+      <div class="mrgn7"></div>
+      <section class="section3 content">
+          <div class="mobile3">
+            <img src="/img/mobile-img.jpg" alt="" />
+            <div class="stdown">
+              <img src="/img/boxshot-wth-loader.png" alt="" />
+              <div class="text-st">
+                <h3>Stranger Things</h3>
+                <p>Downloading...</p>
+              </div>
+              <img src="/img/download-icon.gif" alt="" width="50" />
+            </div>
+          </div>
+          <div class="text3">
+            <h2>Download your shows to watch offline</h2>
+            <h3>
+              Save your favourites easily and always have something to watch.
+            </h3>
+          </div>
+      </section>
+      <div class="mrgn7"></div>
+      <section class="section4 content">
+          <div class="text4">
+            <h2>Watch everywhere</h2>
+            <h3>
+              Stream unlimited movies and TV shows on your phone, tablet,
+              laptop, and TV.
+            </h3>
+          </div>
+          <div class="empty4"></div>
+      </section>
+      <div class="mrgn7"></div>
+      <section class="section5 content">
+          <div class="kid5">
+            <img src="/img/kids-sec-img.png" alt="" />
+          </div>
+          <div class="text5">
+            <h2>Create profiles for kids</h2>
+            <h3>
+              Send kids on adventures with their favorite characters in a space
+              made just for them—free with your membership.
+            </h3>
+          </div>
+      </section>
+      <div class="mrgn7"></div>
+      <section class="section6 content">
+          <h4>Frequently Asked Questions</h4>
+          <div class="faqbox" id="faq1">
+            <span>What is Netflix?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" color="#fff" fill="none">
+    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+          </div>
+          <div id="faqd1" class="faqd">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quae eveniet pariatur quos repellendus fugit earum, fugiat quia praesentium eos repellat voluptatibus! Repellat, labore nemo modi expedita magnam ducimus mollitia, quidem cumque laboriosam porro exercitationem animi molestias fugit tempora dolorum!</span>
+          </div>
+          <div class="faqbox" id="faq2">
+            <span>How much does Netflix cost?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" color="#fff" fill="none">
+    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+          </div>
+          <div id="faqd2" class="faqd">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quae eveniet pariatur quos repellendus fugit earum, fugiat quia praesentium eos repellat voluptatibus! Repellat, labore nemo modi expedita magnam ducimus mollitia, quidem cumque laboriosam porro exercitationem animi molestias fugit tempora dolorum!</span>
+          </div>
+          <div class="faqbox" id="faq3">
+            <span>Where can I watch?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" color="#fff" fill="none">
+    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+          </div>
+          <div id="faqd3" class="faqd">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quae eveniet pariatur quos repellendus fugit earum, fugiat quia praesentium eos repellat voluptatibus! Repellat, labore nemo modi expedita magnam ducimus mollitia, quidem cumque laboriosam porro exercitationem animi molestias fugit tempora dolorum!</span>
+          </div>
+          <div class="faqbox" id="faq4">
+            <span>How do I cancel?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" color="#fff" fill="none">
+    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+          </div>
+          <div id="faqd4" class="faqd">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quae eveniet pariatur quos repellendus fugit earum, fugiat quia praesentium eos repellat voluptatibus! Repellat, labore nemo modi expedita magnam ducimus mollitia, quidem cumque laboriosam porro exercitationem animi molestias fugit tempora dolorum!</span>
+          </div>
+          <div class="faqbox" id="faq5">
+            <span>What can I watch on Netflix?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" color="#fff" fill="none">
+    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+          </div>
+          <div id="faqd5" class="faqd">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quae eveniet pariatur quos repellendus fugit earum, fugiat quia praesentium eos repellat voluptatibus! Repellat, labore nemo modi expedita magnam ducimus mollitia, quidem cumque laboriosam porro exercitationem animi molestias fugit tempora dolorum!</span>
+          </div>
+          <div class="faqbox" id="faq6">
+            <span>Is Netflix good for kids?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" color="#fff" fill="none">
+    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+          </div>
+          <div id="faqd6" class="faqd">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quae eveniet pariatur quos repellendus fugit earum, fugiat quia praesentium eos repellat voluptatibus! Repellat, labore nemo modi expedita magnam ducimus mollitia, quidem cumque laboriosam porro exercitationem animi molestias fugit tempora dolorum!</span>
+          </div>
+          <div class="last">
+            <p>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+            <div class="to-sign-up">
+              <input type="email" placeholder="Email address" name="" id="" />
+              <button class="btn-primary">
+                Get Started &gt;
+              </button>
+            </div>
+          </div>
+      </section>
+    <div class="mrgn7"></div>
+    <footer class="footer content">
+        <p><a href="#">Questions? Contact us.</a></p>
+        <ul class="list">
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Help Center</a></li>
+          <li><a href="">Account</a></li>
+          <li><a href="">Media Center</a></li>
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">Job</a></li>
+          <li><a href="">Ways to Watch</a></li>
+          <li><a href="">Terms of Use</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Cookie Preferences</a></li>
+          <li><a href="">Corporate Information</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Speed Test</a></li>
+          <li><a href="">Legal Notices</a></li>
+          <li><a href="">Only on Netflix</a></li>
+        </ul>
+        <select name="languages" id="lang">
+          <option>English</option>
+        </select>
+        <p>Netflix Pakistan</p>
+    </footer>
+
+  </body>
+</html>
